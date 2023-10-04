@@ -1,0 +1,94 @@
+/* Header.module.css */
+
+/* Background styling */
+.custom-navbar {
+  background-color: #000; /* Change the background color as per your design */
+}
+
+/* Logo styling */
+.logo {
+  margin-right: 10px;
+  width: 50%;
+}
+
+.logo img {
+  width: 50%;
+}
+
+/* Brand name styling */
+.brand-name {
+  font-size: 24px;
+  color: white; /* Change the text color as per your design */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline from the brand name */
+}
+
+/* Custom Toggler (Hamburger Icon) */
+.custom-toggler {
+  border-color: white; /* Change the toggler color as per your design */
+  filter: invert(100%);
+}
+
+/* Navigation link styling */
+.nav-link {
+  color: white !important; /* Change the link text color as per your design */
+  font-weight: bold;
+  margin-right: 20px;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.nav-link:hover {
+  color: orange !important;
+}
+
+/* Active navigation link highlighting */
+.nav-link.active {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Change the active link background color */
+  border-radius: 5px; /* Add rounded corners to active link */
+  padding: 5px 10px; /* Add padding to active link */
+}
+
+#navbar-nav {
+  justify-content: right;
+}
+
+.form-flex {
+  display: flex;
+}
+
+.form-text {
+  width: 100%;
+  margin-right: 1rem;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 100%;
+  }
+
+  .form-flex {
+    display: block;
+  }
+
+  .form-text {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 75%;
+  }
+}
