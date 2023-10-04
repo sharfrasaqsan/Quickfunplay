@@ -1,0 +1,71 @@
+/* LatestNews.css */
+
+/* Style the container */
+.latest-news {
+  text-align: left; /* Align the text content to the left */
+}
+
+/* Style the news card */
+.news-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding to the card content */
+}
+
+/* Style the news title */
+.news-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500 !important;
+}
+
+/* Style the news excerpt */
+.news-excerpt {
+  margin-bottom: 20px;
+}
+
+/* Style the "Read More" button */
+.news-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.news-link:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Style the news image */
+.news-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  border-radius: 8px; /* Add rounded corners to the image */
+}
+
+@media (max-width: 768px) {
+  .news-image {
+    margin-bottom: 20px;
+  }
+
+  .news-title {
+    font-size: 18px !important;
+  }
+
+  .news-excerpt {
+    font-size: 14px !important;
+  }
+
+  .news-link {
+    font-size: 14px !important;
+  }
+
+  .news-card{
+    text-align: center;
+  }
+}

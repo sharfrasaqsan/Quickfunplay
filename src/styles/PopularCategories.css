@@ -1,31 +1,57 @@
 /* PopularCategories.css */
 
 /* Style the container */
-.container {
+.popular-categories {
   text-align: center;
 }
 
+.popular-game img {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
 /* Style the category card */
-.card {
+.category-card {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding to the card content */
 }
 
 /* Style the category title */
-.card-title {
+.category-title {
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: 500 !important; /* Add bold font-weight to the title */
 }
 
 /* Style the "Explore Games" button */
-.btn-primary {
+.category-link {
   background-color: #007bff;
   border-color: #007bff;
   font-weight: bold;
+  color: white; /* Change text color to white */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding to the button */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.2s, border-color 0.2s; /* Add hover transition */
 }
 
-.btn-primary:hover {
+.category-link:hover {
   background-color: #0056b3;
   border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 18px !important;
+  }
+
+  .category-text {
+    font-size: 14px !important;
+  }
+
+  .category-link {
+    font-size: 14px !important;
+  }
 }
