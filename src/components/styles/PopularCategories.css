@@ -62,4 +62,8 @@
   .category-link {
     font-size: 14px !important;
   }
+
+  .card-body {
+    padding: 0 !important;
+  }
 }

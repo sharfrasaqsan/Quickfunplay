@@ -59,7 +59,7 @@ function PopularCategories() {
       </h2>
       <Row>
         {categories.map((category, index) => (
-          <Col key={index} lg={4} md={6} sm={12}>
+          <Col key={index} lg={4} md={6} sm={6} xs={6}>
             <Card className="mb-3 category-card popular-game">
               {/* Use the imported image */}
               <Card.Img
@@ -76,7 +76,7 @@ function PopularCategories() {
                   href={category.link}
                   className="btn btn-primary category-link"
                 >
-                  Explore Games
+                  Explore 
                 </a>
               </Card.Body>
             </Card>
