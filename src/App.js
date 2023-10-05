@@ -5,6 +5,7 @@ import GameList from "./components/GameList";
 import LatestNews from "./components/LatestNews";
 import NewsletterSignup from "./components/NewsletterSignup";
 import Testimonials from "./components/Testimonials";
+import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
       <PopularCategories />
       <GameList />
       <LatestNews />
-      <NewsletterSignup />
       <Testimonials />
+      <ContactUs />
+      <NewsletterSignup />
       <Footer />
     </div>
   );

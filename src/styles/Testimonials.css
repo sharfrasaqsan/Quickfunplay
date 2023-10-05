@@ -1,6 +1,8 @@
-/* Testimonials.css */
-
 .testimonials {
+  background-color: #f4f4f4;
+}
+
+.testimonials-container {
   text-align: center;
   padding: 20px;
   width: 768px;
@@ -49,7 +51,7 @@
 }
 
 @media (max-width: 768px) {
-  .testimonials {
+  .testimonials-container {
     width: 100%;
   }
 

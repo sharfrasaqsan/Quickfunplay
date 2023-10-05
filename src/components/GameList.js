@@ -151,7 +151,7 @@ function GameList() {
   };
 
   return (
-    <Container className="game-list mt-5">
+    <Container className="game-list mt-5 mb-5">
       <h2 className="mb-3">
         <strong>Games</strong>
       </h2>

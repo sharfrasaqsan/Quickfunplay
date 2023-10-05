@@ -16,6 +16,7 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .footer-social ul {
@@ -47,5 +48,9 @@
 @media (max-width: 480px) {
   .footer-container {
     text-align: center;
+  }
+
+  .footer-social {
+    margin-bottom: 20px;
   }
 }

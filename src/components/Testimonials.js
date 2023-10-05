@@ -50,22 +50,24 @@ function Testimonials() {
 
   return (
     <div className="testimonials">
-      <h2>
-        <strong>What Our Users Say</strong>
-      </h2>
-      <Carousel infiniteLoop autoPlay showStatus={false}>
-        {testimonialsData.map((testimonial) => (
-          <div key={testimonial.id} className="testimonial-item">
-            <p className="comment">{testimonial.comment}</p>
-            <div className="user-info">
-              <span className="user-name">{testimonial.name}</span>
-              <span className="user-rating">
-                Rating: {testimonial.rating}/5
-              </span>
+      <div className="testimonials-container">
+        <h2>
+          <strong>What Our Users Say</strong>
+        </h2>
+        <Carousel infiniteLoop autoPlay showStatus={false}>
+          {testimonialsData.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-item">
+              <p className="comment">{testimonial.comment}</p>
+              <div className="user-info">
+                <span className="user-name">{testimonial.name}</span>
+                <span className="user-rating">
+                  Rating: {testimonial.rating}/5
+                </span>
+              </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }

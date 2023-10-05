@@ -18,7 +18,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="row">
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-3 footer-social">
             <h3>About</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam

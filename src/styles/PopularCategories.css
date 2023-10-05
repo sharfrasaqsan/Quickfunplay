@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.popular-categories > Row {
+  margin-bottom: 5rem !important;
+}
+
 .popular-game img {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
