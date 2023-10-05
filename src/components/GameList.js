@@ -157,7 +157,7 @@ function GameList() {
       </h2>
       <Row>
         {gamesToDisplay.map((game, index) => (
-          <Col key={index} lg={2} md={4} sm={6} xs={12}>
+          <Col key={index} lg={3} md={4} sm={6} xs={6}>
             <Card className="game-card">
               <Card.Img variant="top" src={game.imageSrc} alt={game.title} />
               <Card.Body>
@@ -174,6 +174,7 @@ function GameList() {
           </Col>
         ))}
       </Row>
+
       <div className="pagination">
         <Button onClick={handlePrevPage} disabled={currentPage === 1}>
           <FontAwesomeIcon icon={faArrowLeft} /> {/* Left arrow icon */}
