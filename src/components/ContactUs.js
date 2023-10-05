@@ -5,7 +5,7 @@ import {
   faPhone,
   faMapMarker,
 } from "@fortawesome/free-solid-svg-icons";
-import "../styles/ContactUs.css"; // Include your additional CSS file for styling if needed
+import "./styles/ContactUs.css"; // Include your additional CSS file for styling if needed
 
 function ContactUs() {
   return (

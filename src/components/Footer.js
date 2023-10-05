@@ -11,7 +11,7 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import "../styles/Footer.css";
+import "./styles/Footer.css";
 
 function Footer() {
   return (

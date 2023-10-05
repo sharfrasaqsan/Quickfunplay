@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"; // Import arrow icons
-import "../styles/GameList.css"; // Include your CSS file for styling
+import "./styles/GameList.css"; // Include your CSS file for styling
 import ActionImage from "./images/action.jpg";
 
 function GameList() {

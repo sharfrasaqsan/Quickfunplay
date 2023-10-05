@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/NewsletterSignup.css"; // Include your CSS file for styling
+import "./styles/NewsletterSignup.css"; // Include your CSS file for styling
 
 function NewsletterSignup() {
   const [email, setEmail] = useState("");

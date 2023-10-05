@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import ActionImage from "./images/action.jpg";
 import AdventureImage from "./images/adventure.jpg";
 import RacingnImage from "./images/racing.jpg";
-import "../styles/LatestNews.css";
+import "./styles/LatestNews.css";
 
 function LatestNews() {
   // Define an array of recent news articles with titles, excerpts, images, and links

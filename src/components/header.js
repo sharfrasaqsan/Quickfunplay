@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Logo from "../logo.png";
-import "../styles/Header.css";
+import "./styles/Header.css";
 
 function Header() {
   // State to store the search query

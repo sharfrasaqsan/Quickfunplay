@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "../styles/Testimonials.css"; // Include your CSS file for additional styling
+import "./styles/Testimonials.css"; // Include your CSS file for additional styling
 
 function Testimonials() {
   const testimonialsData = [

@@ -9,7 +9,7 @@ import puzzleImage from "./images/puzzle.jpg"; // Import the image
 import strategyImage from "./images/strategy.jpg"; // Import the image
 import racingImage from "./images/racing.jpg"; // Import the image
 import sportsImage from "./images/sports.jpg"; // Import the image
-import "../styles/PopularCategories.css";
+import "./styles/PopularCategories.css";
 
 function PopularCategories() {
   // Define an array of popular categories with their names, links, text, and images
