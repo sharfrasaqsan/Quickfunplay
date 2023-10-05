@@ -3,6 +3,8 @@
 /* Style the container */
 .latest-news {
   text-align: left; /* Align the text content to the left */
+  padding: 20px 0;
+  margin: 20px 0;
 }
 
 /* Style the news card */
@@ -49,6 +51,10 @@
 }
 
 @media (max-width: 768px) {
+  .latest-news h2 {
+    font-size: 24px !important;
+  }
+
   .news-image {
     margin-bottom: 20px;
   }
@@ -65,7 +71,7 @@
     font-size: 14px !important;
   }
 
-  .news-card{
+  .news-card {
     text-align: center;
   }
 }

@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 768px) {
+  .popular-categories h2 {
+    font-size: 24px !important;
+  }
+
   .category-title {
     font-size: 18px !important;
   }

@@ -36,7 +36,7 @@ function LatestNews() {
   ];
 
   return (
-    <Container className="latest-news mt-5">
+    <Container className="latest-news">
       <h2 className="mb-3 text-center">
         <strong>Latest News & Updates</strong>
       </h2>

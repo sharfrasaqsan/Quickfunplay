@@ -166,9 +166,9 @@ function GameList() {
                 <Button variant="success" href={`/game/${game.id}`}>
                   Play Now
                 </Button>
-                <Button variant="info" href={`/game/${game.id}`}>
+                {/* <Button variant="dark" href={`/game/${game.id}`}>
                   Read More
-                </Button>
+                </Button> */}
               </Card.Body>
             </Card>
           </Col>
