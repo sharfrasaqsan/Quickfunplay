@@ -76,7 +76,7 @@ function PopularCategories() {
                   href={category.link}
                   className="btn btn-primary category-link"
                 >
-                  Explore 
+                  Explore
                 </a>
               </Card.Body>
             </Card>

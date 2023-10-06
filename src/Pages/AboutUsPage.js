@@ -153,7 +153,7 @@ function AboutUsPage() {
             <div className="row">
               {/* Team Member Card 1 */}
               <div className="col-md-4 mb-4 d-flex">
-                <div className="card">
+                <div className="card text-center">
                   <img
                     src={Member1}
                     className="card-img-top"
@@ -175,7 +175,7 @@ function AboutUsPage() {
 
               {/* Team Member Card 2 */}
               <div className="col-md-4 mb-4 d-flex">
-                <div className="card">
+                <div className="card text-center">
                   <img
                     src={Member2}
                     className="card-img-top"
@@ -196,7 +196,7 @@ function AboutUsPage() {
 
               {/* Team Member Card 3 */}
               <div className="col-md-4 mb-4 d-flex">
-                <div className="card">
+                <div className="card text-center">
                   <img
                     src={Member3}
                     className="card-img-top"

@@ -1,0 +1,78 @@
+/* GameList.css */
+
+.gamepagetop {
+  margin-top: 5rem;
+}
+/* Style the container */
+.game-list {
+  text-align: center;
+}
+
+/* Style the game card */
+.game-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the game title */
+.game-card .card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the "Play Now" and "Read More" buttons */
+.game-card .btn-primary,
+.game-card .btn-dark {
+  margin-top: 10px;
+}
+
+.game-card .btn-dark {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.game-card .btn-dark:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #343a40;
+}
+
+@media (max-width: 768px) {
+  .game-list h2 {
+    font-size: 24px !important;
+  }
+  .game-card {
+    margin-bottom: 10px;
+  }
+
+  .game-card .card-title {
+    font-size: 16px;
+  }
+
+  .game-card .card-text {
+    font-size: 14px;
+  }
+
+  .game-card .btn-success,
+  .game-card .btn-dark {
+    font-size: 14px;
+  }
+}
+
+/* Style pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-number {
+  margin: 0 10px;
+  font-weight: bold;
+}

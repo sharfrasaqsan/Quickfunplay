@@ -3,17 +3,18 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Logo from "../logo.png";
+import { useNavigate } from "react-router-dom";
 import "./styles/Header.css";
 
 function Header() {
   // State to store the search query
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
-  // Function to handle form submission
   const handleSearch = (e) => {
     e.preventDefault();
-    // Here, you can perform actions with the searchQuery, such as making an API request.
-    console.log("Searching for:", searchQuery);
+    // Redirect to the SearchResult component with the search query
+    navigate(`/search/${searchQuery}`);
   };
 
   return (
