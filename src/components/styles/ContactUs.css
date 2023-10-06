@@ -26,6 +26,16 @@
   color: #007bff; /* Icon color */
 }
 
+.info-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  color: orange;
+  transition: color 0.3s;
+}
+
 .contact-form h3 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -41,7 +51,7 @@
   font-weight: bold;
 }
 
-.form-group>.form-control {
+.form-group > .form-control {
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;

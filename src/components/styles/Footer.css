@@ -35,6 +35,7 @@
 
 .footer-social ul li a:hover {
   color: orange;
+  transition: color 0.3s;
 }
 
 .footer-copyright {

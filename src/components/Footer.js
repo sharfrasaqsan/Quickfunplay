@@ -30,15 +30,18 @@ function Footer() {
             <address>
               <ul>
                 <li>
-                  <FontAwesomeIcon icon={faEnvelope} /> Email:
-                  contact@example.com
+                  <FontAwesomeIcon icon={faEnvelope} /> Email:{" "}
+                  <a href="mailto:sharfrasaqsan@gmail.com">
+                    sharfrasaqsan@gmail.com
+                  </a>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faPhone} /> Phone: +1 (123) 456-7890
+                  <FontAwesomeIcon icon={faPhone} /> Phone:{" "}
+                  <a href="tel:+94751230001">+94 75 123 0001</a>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faMapMarker} /> Address: 123 Main
-                  Street, City, Country
+                  <FontAwesomeIcon icon={faMapMarker} /> Address: Trincomalee,
+                  Sri Lanka
                 </li>
               </ul>
             </address>
@@ -79,7 +82,7 @@ function Footer() {
                 <a href="#">Support</a>
               </li>
             </ul>
-          </div>    
+          </div>
         </div>
         <div className="row">
           <p className="col-sm footer-copyright">

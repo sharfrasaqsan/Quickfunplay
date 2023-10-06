@@ -1,0 +1,137 @@
+/* ContactUs.css */
+
+/* Custom Contact Us Section */
+.custom-contact-us {
+  padding-bottom: 40px;
+  margin-top: 5rem;
+}
+
+/* Custom Container */
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Custom Row */
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Custom Heading */
+.custom-contact-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Custom Description */
+.custom-contact-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Custom Contact Info */
+.custom-contact-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777;
+  font-weight: 600;
+}
+
+.custom-contact-info a,
+.custom-contact-social a {
+  color: #333;
+  text-decoration: none;
+}
+
+.custom-contact-info a:hover,
+.custom-contact-social a:hover {
+  color: orange;
+  transition: color 0.3s;
+}
+
+/* Custom Contact Form */
+.custom-contact-form {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Form Control */
+.custom-form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Custom Textarea */
+.custom-contact-textarea {
+  height: 210px;
+  font-size: 16px;
+}
+
+/* Custom Primary Button */
+.custom-btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Custom Primary Button Hover */
+.custom-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.custom-contact-social ul {
+  list-style: none;
+}
+
+.custom-contact-social a {
+  color: #333;
+  text-decoration: none;
+}
+.custom-contact-social a:hover {
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .custom-contact-heading {
+    font-size: 24px;
+  }
+
+  .custom-contact-description {
+    font-size: 14px;
+  }
+
+  .custom-contact-info {
+    font-size: 14px;
+  }
+
+  .custom-form-control {
+    font-size: 14px !important;
+  }
+
+  .custom-contact-textarea {
+    font-size: 14px !important;
+  }
+
+  .custom-btn-primary {
+    font-size: 14px !important;
+  }
+
+  .custom-contact-social a {
+    font-size: 14px;
+  }
+}

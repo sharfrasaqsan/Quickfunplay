@@ -6,26 +6,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Header from "../components/header";
+import games from "../components/GameData"; // Import game data
 
 function SearchResult() {
   const { query } = useParams();
-
-  // Replace this with your actual data
-  const games = [
-    {
-      id: 1,
-      title: "Game 1",
-      Category: "Action",
-      imageSrc: "image_url_for_game_1", // Replace with the actual image URL
-    },
-    {
-      id: 2,
-      title: "Game 2",
-      Category: "Adventure",
-      imageSrc: "image_url_for_game_2", // Replace with the actual image URL
-    },
-    // Add more games as needed
-  ];
 
   // Filter games based on the search query for title or category
   const filteredResults = games.filter(

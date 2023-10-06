@@ -5,21 +5,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import "./styles/GamesPage.css";
-import ActionImage from "../components/images/action.jpg";
 import Header from "../components/header";
 import NewsletterSignup from "../components/NewsletterSignup";
 import Footer from "../components/Footer";
+import games from "../components/GameData"; // Import game data
 
 function Games() {
-  const games = [
-    {
-      id: 1,
-      title: "Game 1",
-      Category: "Category: Action",
-      imageSrc: ActionImage,
-    },
-  ];
-
   return (
     <div className="gamepagetop">
       <Header />
@@ -28,9 +19,9 @@ function Games() {
         <h2 className="mb-3">
           <strong>Games</strong>
         </h2>
-        <Row>
+        <Row className="row-cols-2 row-cols-md-3 row-cols-lg-5">
           {games.map((game, index) => (
-            <Col key={index} lg={2} md={4} sm={6} xs={6}>
+            <Col key={index}>
               <Card className="game-card">
                 <Card.Img variant="top" src={game.imageSrc} alt={game.title} />
                 <Card.Body>

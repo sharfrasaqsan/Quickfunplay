@@ -18,15 +18,22 @@ function ContactUs() {
           <div className="contact-info">
             <div className="info-item">
               <FontAwesomeIcon icon={faEnvelope} />
-              <p>Email: contact@example.com</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:sharfrasaqsan@gmail.com">
+                  sharfrasaqsan@gmail.com
+                </a>
+              </p>
             </div>
             <div className="info-item">
               <FontAwesomeIcon icon={faPhone} />
-              <p>Phone: +1 (123) 456-7890</p>
+              <p>
+                Phone: <a href="tel:+94751230001">+94 75 123 0001</a>
+              </p>
             </div>
             <div className="info-item">
               <FontAwesomeIcon icon={faMapMarker} />
-              <p>Address: 123 Main Street, City, Country</p>
+              <p>Address: Trincomalee, Sri Lanka</p>
             </div>
           </div>
         </div>
