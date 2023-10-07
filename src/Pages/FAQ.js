@@ -42,6 +42,34 @@ function FAQ() {
         <Row>
           <Col className="faq-margin">
             <div
+              className={`faq-item ${openItems.includes(1) ? "open" : ""}`}
+              onClick={() => toggleItem(1)}
+            >
+              <div className="faq-question">
+                {" "}
+                1. How do I create an account?
+              </div>
+              <div className="faq-answer">
+                To create an account, click on the "Sign Up" button in the
+                top-right corner of the website. Follow the prompts to enter
+                your information and complete the registration process.
+              </div>
+            </div>
+
+            <div
+              className={`faq-item ${openItems.includes(2) ? "open" : ""}`}
+              onClick={() => toggleItem(2)}
+            >
+              <div className="faq-question">2. Is my information secure?</div>
+              <div className="faq-answer">
+                Yes, we take the security of your information seriously. We use
+                industry-standard encryption and security measures to protect
+                your data. You can learn more about our security practices in
+                our <Link to="/privacy">Privacy Policy</Link>.
+              </div>
+            </div>
+
+            <div
               className={`faq-item ${openItems.includes(3) ? "open" : ""}`}
               onClick={() => toggleItem(3)}
             >

@@ -21,19 +21,27 @@ function ContactUs() {
               <p>
                 Email:{" "}
                 <a href="mailto:sharfrasaqsan@gmail.com">
-                  sharfrasaqsan@gmail.com
+                  <b>sharfrasaqsan@gmail.com</b>
                 </a>
               </p>
             </div>
             <div className="info-item">
               <FontAwesomeIcon icon={faPhone} />
               <p>
-                Phone: <a href="tel:+94751230001">+94 75 123 0001</a>
+                Phone:{" "}
+                <a href="tel:+94751230001">
+                  <b>+94 75 123 0001</b>
+                </a>
               </p>
             </div>
             <div className="info-item">
               <FontAwesomeIcon icon={faMapMarker} />
-              <p>Address: Trincomalee, Sri Lanka</p>
+              <p>
+                Address:{" "}
+                <a href="https://maps.app.goo.gl/4FhYZC8AUex8jrLTA">
+                  <b>Trincomalee, Sri Lanka</b>
+                </a>
+              </p>
             </div>
           </div>
         </div>

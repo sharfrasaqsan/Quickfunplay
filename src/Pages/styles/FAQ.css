@@ -62,7 +62,7 @@
 }
 
 .faq-item {
-  max-height: 15px;
+  max-height: max-content;
   transition: max-height 0.3s ease-in-out;
 }
 

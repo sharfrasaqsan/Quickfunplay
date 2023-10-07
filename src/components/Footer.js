@@ -40,8 +40,10 @@ function Footer() {
                   <a href="tel:+94751230001">+94 75 123 0001</a>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faMapMarker} /> Address: Trincomalee,
-                  Sri Lanka
+                  <FontAwesomeIcon icon={faMapMarker} /> Address:{" "}
+                  <a href="https://maps.app.goo.gl/4FhYZC8AUex8jrLTA">
+                    Trincomalee, Sri Lanka
+                  </a>
                 </li>
               </ul>
             </address>

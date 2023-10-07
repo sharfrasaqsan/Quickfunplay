@@ -28,6 +28,12 @@
   color: #333;
 }
 
+.custom-contact-sub-heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 /* Custom Description */
 .custom-contact-description {
   font-size: 16px;
@@ -36,7 +42,6 @@
 
 /* Custom Contact Info */
 .custom-contact-info {
-  margin-top: 20px;
   font-size: 16px;
   color: #777;
   font-weight: 600;
@@ -98,17 +103,46 @@
   list-style: none;
 }
 
-.custom-contact-social a {
+.custom-contact-social a,
+.custom-contact-description a {
   color: #333;
   text-decoration: none;
 }
-.custom-contact-social a:hover {
+.custom-contact-social a:hover,
+.custom-contact-description a:hover {
   color: orange;
+}
+
+.custom-contact-ul {
+  list-style: none;
+}
+
+.custom-contact-ul li {
+  margin-bottom: 10px;
+}
+
+.custom-contact-ul li:last-child {
+  margin-bottom: 0;
+}
+
+.custom-contact-ul span {
+  color: #333;
+  font-weight: 600;
+}
+
+.costom-contact-social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
   .custom-contact-heading {
     font-size: 24px;
+  }
+
+  .custom-contact-sub-heading {
+    font-size: 20px;
   }
 
   .custom-contact-description {
@@ -132,6 +166,10 @@
   }
 
   .custom-contact-social a {
+    font-size: 14px;
+  }
+
+  .custom-contact-ul {
     font-size: 14px;
   }
 }
