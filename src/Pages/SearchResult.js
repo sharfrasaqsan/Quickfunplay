@@ -6,7 +6,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Header from "../components/header";
-import games from "../components/GameData"; // Import game data
+import NewsLetterSignUp from "../components/NewsletterSignup";
+import Footer from "../components/Footer";
+import games from "../components/GameData";
 
 function SearchResult() {
   useEffect(() => {
@@ -62,6 +64,9 @@ function SearchResult() {
           )}
         </Container>
       </div>
+
+      <NewsLetterSignUp />
+      <Footer />
     </div>
   );
 }

@@ -57,6 +57,7 @@ function Header() {
                 aria-label="Search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                required
               />
               <button
                 className="btn btn-outline-light my-2 my-sm-0"

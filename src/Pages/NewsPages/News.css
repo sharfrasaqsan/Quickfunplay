@@ -1,10 +1,21 @@
 /* News.css */
+.news-header {
+  background-color: orange; /* Header background color */
+  color: #fff; /* Header text color */
+  padding-bottom: 0.5rem; /* Header padding */
+  text-align: center; /* Center align text */
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.news-title {
+  font-size: 2rem; /* Header title font size */
+}
 
 /* Style the container */
 .news-article {
   margin: 0 auto;
-  padding: 20px;
-  margin-top: 4rem;
+  padding: 0 20px 20px;
 }
 
 /* Style the article title */
@@ -61,6 +72,14 @@
 @media (max-width: 768px) {
   .news-article img {
     max-width: 50%;
+  }
+
+  .news-title {
+    font-size: 24px !important;
+  }
+
+  .news-article p {
+    font-size: 14px;
   }
 }
 

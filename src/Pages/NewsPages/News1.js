@@ -16,11 +16,14 @@ function News1() {
   return (
     <div>
       <Header />
-      <Container className="news-article">
-        <h1 className="mb-3 text-center">
-          New Game Release: <strong>Action Heroes Unleashed</strong>!
-        </h1>
 
+      <header className="news-header">
+        <h1 className="news-title">
+          <strong>Action Heroes Unleashed</strong>
+        </h1>
+      </header>
+
+      <Container className="news-article">
         <p>
           Get ready for the ultimate action experience with the release of{" "}
           <strong>Action Heroes Unleashed</strong>. In this thrilling game,
