@@ -1,0 +1,87 @@
+/* News.css */
+
+/* Style the container */
+.news-article {
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 4rem;
+}
+
+/* Style the article title */
+.news-article h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the images */
+.news-article img {
+  max-width: 35%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.left-image {
+  float: left;
+  margin-left: 0 !important;
+  margin-right: 20px;
+}
+
+.right-image {
+  float: right;
+  margin-right: 0 !important;
+  margin-left: 20px;
+}
+
+.news-article img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* Style the paragraphs */
+.news-article p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Style links within the article */
+.news-article a {
+  color: #333;
+}
+
+.news-article a:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .news-article img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-article img {
+    max-width: 100%;
+  }
+
+  .news-article img {
+    margin-bottom: 20px;
+  }
+
+  .left-image {
+    margin-right: 0;
+  }
+
+  .right-image {
+    margin-left: 0;
+  }
+
+  .news-article p {
+    hyphens: auto;
+  }
+}

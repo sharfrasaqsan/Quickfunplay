@@ -23,7 +23,7 @@ function Header() {
         <Navbar.Brand href="/" className="logo">
           <img
             src={Logo}
-            alt="Your Logo"
+            alt="Quick Fun Play Logo"
             className="d-inline-block align-top"
           />
           <span className="brand-name"></span>
@@ -39,6 +39,9 @@ function Header() {
             </Nav.Link>
             <Nav.Link href="/about" className="nav-link">
               About
+            </Nav.Link>
+            <Nav.Link href="/news" className="nav-link">
+              News
             </Nav.Link>
             <Nav.Link href="/contact" className="nav-link">
               Contact

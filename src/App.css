@@ -4,3 +4,10 @@
   box-sizing: border-box;
   font-family: "Open Sans";
 }
+
+btn:hover,
+button:hover,
+input:hover,
+a:hover {
+  transition: all 0.3s ease-in-out;
+}

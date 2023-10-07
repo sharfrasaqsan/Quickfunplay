@@ -50,6 +50,10 @@
   border-radius: 8px; /* Add rounded corners to the image */
 }
 
+.news-page-margin {
+  margin-top: 3.8rem;
+}
+
 @media (max-width: 768px) {
   .latest-news h2 {
     font-size: 24px !important;
