@@ -9,6 +9,7 @@ import Header from "../components/header";
 import NewsLetterSignUp from "../components/NewsletterSignup";
 import Footer from "../components/Footer";
 import games from "../components/GameData";
+import "./styles/SearchResult.css";
 
 function SearchResult() {
   useEffect(() => {
@@ -28,7 +29,7 @@ function SearchResult() {
     <div>
       <Header />
       <div style={{ marginTop: "5rem" }}>
-        <Container>
+        <Container className="height-correction">
           <h2 className="mb-4">
             Search Results for <strong>"{query}"</strong>
           </h2>
