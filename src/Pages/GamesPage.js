@@ -16,13 +16,16 @@ function Games() {
   }, []);
 
   return (
-    <div className="gamepagetop">
+    <div>
       <Header />
 
-      <Container className="game-list mt-5 mb-5">
-        <h2 className="mb-3">
+      <header className="games-header">
+        <h1 className="games-title">
           <strong>Games</strong>
-        </h2>
+        </h1>
+      </header>
+
+      <Container className="game-list mt-5 mb-5">
         <Row className="row-cols-2 row-cols-md-3 row-cols-lg-5">
           {games.map((game, index) => (
             <Col key={index}>

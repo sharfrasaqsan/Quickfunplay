@@ -1,4 +1,18 @@
 /* GameList.css */
+.game-header {
+  background-color: orange; /* Header background color */
+  color: #fff; /* Header text color */
+  padding-bottom: 0.5rem; /* Header padding */
+  text-align: center; /* Center align text */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-: 2rem;
+  margin-top: 2rem;
+}
+
+.game-title {
+  font-size: 2rem; /* Header title font size */
+}
 
 /* Style the container */
 .game-list {
@@ -39,10 +53,16 @@
   background-color: #343a40;
 }
 
+.carousel .control-dots .dot {
+  width: 10px !important;
+  height: 10px !important;
+}
+
 @media (max-width: 768px) {
-  .game-list h2 {
-    font-size: 24px !important;
+  .game-title {
+    font-size: 24px; /* Header title font size */
   }
+
   .game-card {
     margin-bottom: 10px;
   }

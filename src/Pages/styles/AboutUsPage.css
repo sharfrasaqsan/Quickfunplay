@@ -1,4 +1,16 @@
 /* src/styles/AboutUsPage.css */
+.about-header {
+  background-color: orange; /* Header background color */
+  color: #fff; /* Header text color */
+  padding-bottom: 0.5rem; /* Header padding */
+  text-align: center; /* Center align text */
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 2rem; /* Header title font size */
+}
 
 /* Style the main container */
 .container.about-us {
@@ -90,10 +102,6 @@
 }
 
 @media (max-width: 768px) {
-  .about-us h2 {
-    font-size: 24px;
-  }
-
   .about-us p {
     font-size: 14px;
   }
@@ -104,5 +112,9 @@
 
   .about-us-list li {
     font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 24px;
   }
 }

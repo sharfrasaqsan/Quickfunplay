@@ -67,10 +67,13 @@ function News() {
     <div>
       <Header />
 
-      <Container className="latest-news news-page-margin">
-        <h2 className="mb-3 text-center">
+      <header className="contact-header">
+        <h1 className="contact-title">
           <strong>Latest News & Updates</strong>
-        </h2>
+        </h1>
+      </header>
+
+      <Container className="latest-news">
         {newsArticles.map((article, index) => (
           <Row key={index} className="mb-3">
             <Col lg={12}>

@@ -16,11 +16,14 @@ function AboutUsPage() {
   return (
     <div>
       <Header />
-      <div className="container about-us" style={{ marginTop: "5rem" }}>
-        <h2 className="text-center mb-4">
-          <strong>About Us</strong>
-        </h2>
 
+      <header className="about-header">
+        <h1 className="about-title">
+          <strong>About Us</strong>
+        </h1>
+      </header>
+
+      <div className="container about-us">
         <div className="row">
           <div className="col-lg-6">
             <img src={Logo} alt="Quick Fun Play" className="img-fluid" />

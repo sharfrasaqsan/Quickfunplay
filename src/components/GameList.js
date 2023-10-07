@@ -33,39 +33,47 @@ function GameList() {
   };
 
   return (
-    <Container className="game-list mt-5 mb-5">
-      <h2 className="mb-3">
-        <strong>Games</strong>
-      </h2>
-      <Row>
-        {gamesToDisplay.map((game, index) => (
-          <Col key={index} lg={3} md={4} sm={6} xs={6}>
-            <Card className="game-card">
-              <Card.Img variant="top" src={game.imageSrc} alt={game.title} />
-              <Card.Body>
-                <Card.Title>{game.title}</Card.Title>
-                <Card.Text>{game.Category}</Card.Text>
-                <Button variant="success" href={`/game/${game.id}`}>
-                  Play Now
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+    <div>
+      <header className="game-header">
+        <h1 className="game-title">
+          <strong>Games</strong>
+        </h1>
+      </header>
 
-      <div className="pagination">
-        <Button onClick={handlePrevPage} disabled={currentPage === 1}>
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </Button>
-        <span className="page-number">
-          Page {currentPage} of {totalPages}
-        </span>
-        <Button onClick={handleNextPage} disabled={currentPage === totalPages}>
-          <FontAwesomeIcon icon={faArrowRight} />
-        </Button>
-      </div>
-    </Container>
+      <Container className="game-list mt-5 mb-5">
+        <Row>
+          {gamesToDisplay.map((game, index) => (
+            <Col key={index} lg={3} md={4} sm={6} xs={6}>
+              <Card className="game-card">
+                <Card.Img variant="top" src={game.imageSrc} alt={game.title} />
+                <Card.Body>
+                  <Card.Title>{game.title}</Card.Title>
+                  <Card.Text>{game.Category}</Card.Text>
+                  <Button variant="success" href={`/game/${game.id}`}>
+                    Play Now
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+
+        <div className="pagination">
+          <Button onClick={handlePrevPage} disabled={currentPage === 1}>
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </Button>
+          <span className="page-number">
+            Page {currentPage} of {totalPages}
+          </span>
+          <Button
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+          >
+            <FontAwesomeIcon icon={faArrowRight} />
+          </Button>
+        </div>
+      </Container>
+    </div>
   );
 }
 

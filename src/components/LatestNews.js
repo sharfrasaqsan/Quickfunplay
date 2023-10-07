@@ -36,44 +36,49 @@ function LatestNews() {
   ];
 
   return (
-    <Container className="latest-news">
-      <h2 className="mb-3 text-center">
-        <strong>Latest News & Updates</strong>
-      </h2>
-      {newsArticles.map((article, index) => (
-        <Row key={index} className="mb-3">
-          <Col lg={12}>
-            <Card className="news-card">
-              <Card.Body>
-                <Row>
-                  <Col lg={3}>
-                    <img
-                      src={article.imageSrc}
-                      alt={article.title}
-                      className="news-image"
-                    />
-                  </Col>
-                  <Col lg={9}>
-                    <Card.Title className="news-title">
-                      {article.title}
-                    </Card.Title>
-                    <Card.Text className="news-excerpt text-left">
-                      {article.excerpt}
-                    </Card.Text>
-                    <a
-                      href={article.link}
-                      className="btn btn-secondary news-link"
-                    >
-                      Read More
-                    </a>
-                  </Col>
-                </Row>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      ))}
-    </Container>
+    <div>
+      <header className="game-header">
+        <h1 className="game-title">
+          <strong>Latest News & Updates</strong>
+        </h1>
+      </header>
+
+      <Container className="latest-news">
+        {newsArticles.map((article, index) => (
+          <Row key={index} className="mb-3">
+            <Col lg={12}>
+              <Card className="news-card">
+                <Card.Body>
+                  <Row>
+                    <Col lg={3}>
+                      <img
+                        src={article.imageSrc}
+                        alt={article.title}
+                        className="news-image"
+                      />
+                    </Col>
+                    <Col lg={9}>
+                      <Card.Title className="news-title">
+                        {article.title}
+                      </Card.Title>
+                      <Card.Text className="news-excerpt text-left">
+                        {article.excerpt}
+                      </Card.Text>
+                      <a
+                        href={article.link}
+                        className="btn btn-secondary news-link"
+                      >
+                        Read More
+                      </a>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        ))}
+      </Container>
+    </div>
   );
 }
 

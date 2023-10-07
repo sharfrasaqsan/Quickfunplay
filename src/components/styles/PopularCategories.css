@@ -1,4 +1,17 @@
 /* PopularCategories.css */
+/* ContactUs.css */
+.popular-header {
+  background-color: orange; /* Header background color */
+  color: #fff; /* Header text color */
+  padding-bottom: 0.5rem; /* Header padding */
+  text-align: center; /* Center align text */
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.popular-title {
+  font-size: 2rem; /* Header title font size */
+}
 
 /* Style the container */
 .popular-categories {
@@ -47,8 +60,8 @@
 }
 
 @media (max-width: 768px) {
-  .popular-categories h2 {
-    font-size: 24px !important;
+  .popular-title {
+    font-size: 24px;
   }
 
   .category-title {

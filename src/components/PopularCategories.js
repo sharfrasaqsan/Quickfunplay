@@ -53,37 +53,44 @@ function PopularCategories() {
   ];
 
   return (
-    <Container className="popular-categories" style={{ marginTop: "5rem" }}>
-      <h2 className="mb-3">
-        <strong>Popular Game Categories</strong>
-      </h2>
-      <Row>
-        {categories.map((category, index) => (
-          <Col key={index} lg={4} md={6} sm={6} xs={6}>
-            <Card className="mb-3 category-card popular-game">
-              {/* Use the imported image */}
-              <Card.Img
-                variant="top"
-                src={category.imageSrc}
-                alt={category.name}
-              />
-              <Card.Body>
-                <Card.Title className="category-title">
-                  {category.name}
-                </Card.Title>
-                <Card.Text className="category-text">{category.text}</Card.Text>
-                <a
-                  href={category.link}
-                  className="btn btn-primary category-link"
-                >
-                  Explore
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div>
+      <header className="popular-header">
+        <h1 className="popular-title">
+          <strong>Popular Game Categories</strong>
+        </h1>
+      </header>
+
+      <Container className="popular-categories">
+        <Row>
+          {categories.map((category, index) => (
+            <Col key={index} lg={4} md={6} sm={6} xs={6}>
+              <Card className="mb-3 category-card popular-game">
+                {/* Use the imported image */}
+                <Card.Img
+                  variant="top"
+                  src={category.imageSrc}
+                  alt={category.name}
+                />
+                <Card.Body>
+                  <Card.Title className="category-title">
+                    {category.name}
+                  </Card.Title>
+                  <Card.Text className="category-text">
+                    {category.text}
+                  </Card.Text>
+                  <a
+                    href={category.link}
+                    className="btn btn-primary category-link"
+                  >
+                    Explore
+                  </a>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </div>
   );
 }
 

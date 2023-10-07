@@ -19,38 +19,81 @@ function ContactUs() {
   return (
     <div>
       <Header />
+
+      <header className="contact-header">
+        <h1 className="contact-title">
+          <strong>Contact Us</strong>
+        </h1>
+      </header>
+
       <div className="container custom-contact-us">
-        <h2 className="custom-contact-heading text-center">Contact Us</h2>
+        <div className="row custom-row">
+          <div className="col-md-6">
+            <h3 className="custom-contact-sub-heading">Get in Touch with Us</h3>
+            <p className="custom-contact-description">
+              Thank you for considering reaching out to us! At Quick Fun Play,
+              we value your inquiries, feedback, and any comments you may have.
+              We're dedicated to providing excellent customer service and
+              ensuring your experience with us is a positive one.
+            </p>
+
+            <p className="custom-contact-info">
+              Address:{" "}
+              <a href="https://maps.app.goo.gl/4FhYZC8AUex8jrLTA">
+                Trincomalee, Sri Lanka
+              </a>
+            </p>
+            <p className="custom-contact-info">
+              Email:{" "}
+              <a href="mailto:sharfrasaqsan@gmail.com">
+                sharfrasaqsan@gmail.com
+              </a>{" "}
+            </p>
+            <p className="custom-contact-info">
+              Phone: <a href="+94751230001">+94 75 123 0001</a>{" "}
+            </p>
+            <p className="custom-contact-description">
+              Please feel free to use any of the contact methods above to get in
+              touch with us. Whether you have questions about our products, need
+              assistance with an order, or want to share your thoughts, our team
+              is here to help.
+            </p>
+          </div>
+
+          <div className="col-md-6 res-margin">
+            <form className="custom-contact-form">
+              <div className="mb-3">
+                <input
+                  type="text"
+                  className="form-control custom-form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  type="email"
+                  className="form-control custom-form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div className="mb-3">
+                <textarea
+                  className="form-control custom-contact-textarea"
+                  rows="5"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary custom-btn-primary"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
 
         <div className="row custom-row">
-          <h3 className="custom-contact-sub-heading">Get in Touch with Us</h3>
-          <p className="custom-contact-description">
-            Thank you for considering reaching out to us! At Quick Fun Play, we
-            value your inquiries, feedback, and any comments you may have. We're
-            dedicated to providing excellent customer service and ensuring your
-            experience with us is a positive one.
-          </p>
-
-          <p className="custom-contact-info">
-            Address:{" "}
-            <a href="https://maps.app.goo.gl/4FhYZC8AUex8jrLTA">
-              Trincomalee, Sri Lanka
-            </a>
-          </p>
-          <p className="custom-contact-info">
-            Email:{" "}
-            <a href="mailto:sharfrasaqsan@gmail.com">sharfrasaqsan@gmail.com</a>{" "}
-          </p>
-          <p className="custom-contact-info">
-            Phone: <a href="+94751230001">+94 75 123 0001</a>{" "}
-          </p>
-          <p className="custom-contact-description">
-            Please feel free to use any of the contact methods above to get in
-            touch with us. Whether you have questions about our products, need
-            assistance with an order, or want to share your thoughts, our team
-            is here to help.
-          </p>
-
           <h3 className="custom-contact-sub-heading">Our Commitment</h3>
           <p className="custom-contact-description">
             At Quick Fun Play, your happiness and enjoyment are our top
@@ -100,76 +143,37 @@ function ContactUs() {
               gaming deserves to be rewarded!
             </li>
           </ul>
-        </div>
 
-        <div className="row custom-row">
-          <div className="col-md-6">
-            <h3 className="custom-contact-sub-heading">Response Time</h3>
-            <p className="custom-contact-description">
-              We understand that your gaming time is precious. Our team strives
-              to respond to all inquiries within 24-48 hours, excluding weekends
-              and holidays. For pressing matters or immediate assistance, please
-              consider reaching out to us by phone during our business hours.
-            </p>
+          <h3 className="custom-contact-sub-heading">Response Time</h3>
+          <p className="custom-contact-description">
+            We understand that your gaming time is precious. Our team strives to
+            respond to all inquiries within 24-48 hours, excluding weekends and
+            holidays. For pressing matters or immediate assistance, please
+            consider reaching out to us by phone during our business hours.
+          </p>
 
-            <h3 className="custom-contact-sub-heading">Business Hours</h3>
-            <ul className="custom-contact-ul">
-              <li>
-                <span>Monday to Friday:</span> 9:00 AM - 5:00 PM (Game Time
-                Zone)
-              </li>
-              <li>
-                <span>Saturday:</span> 10:00 AM - 4:00 PM (Game Time Zone)
-              </li>
-              <li>
-                <span>Sunday:</span> Closed
-              </li>
-            </ul>
+          <h3 className="custom-contact-sub-heading">Business Hours</h3>
+          <ul className="custom-contact-ul">
+            <li>
+              <span>Monday to Friday:</span> 9:00 AM - 5:00 PM (Game Time Zone)
+            </li>
+            <li>
+              <span>Saturday:</span> 10:00 AM - 4:00 PM (Game Time Zone)
+            </li>
+            <li>
+              <span>Sunday:</span> Closed
+            </li>
+          </ul>
 
-            <p className="custom-contact-description">
-              <i>
-                Please note that our business hours are subject to occasional
-                updates and holiday closures, so check our website for the
-                latest information. Our goal is to be available when you're
-                ready to embark on a gaming journey.
-              </i>
-            </p>
-          </div>
+          <p className="custom-contact-description">
+            <i>
+              Please note that our business hours are subject to occasional
+              updates and holiday closures, so check our website for the latest
+              information. Our goal is to be available when you're ready to
+              embark on a gaming journey.
+            </i>
+          </p>
 
-          <div className="col-md-6">
-            <form className="custom-contact-form">
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className="form-control custom-form-control"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className="form-control custom-form-control"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  className="form-control custom-contact-textarea"
-                  rows="5"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="btn btn-primary custom-btn-primary"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <div className="row custom-row">
           <h3 className="custom-contact-sub-heading">
             Connect with Us on Social Media
           </h3>
