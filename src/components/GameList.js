@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -12,6 +12,7 @@ import games from "./GameData"; // Import game data
 function GameList() {
   const gamesPerPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
+  const gamesHeadingRef = useRef(null);
 
   // Calculate the index range for games to display on the current page
   const startIndex = (currentPage - 1) * gamesPerPage;
@@ -23,18 +24,30 @@ function GameList() {
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      setTimeout(() => {
+        window.scrollTo({
+          top: gamesHeadingRef.current.offsetTop,
+          behavior: "smooth",
+        }); // Scroll to the "Games" heading
+      }, 0);
     }
   };
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      setTimeout(() => {
+        window.scrollTo({
+          top: gamesHeadingRef.current.offsetTop,
+          behavior: "smooth",
+        }); // Scroll to the "Games" heading
+      }, 0);
     }
   };
 
   return (
     <div>
-      <header className="game-header">
+      <header className="game-header" ref={gamesHeadingRef}>
         <h1 className="game-title">
           <strong>Games</strong>
         </h1>
