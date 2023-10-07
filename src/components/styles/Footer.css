@@ -28,12 +28,14 @@
   margin-bottom: 10px;
 }
 
-.footer-social ul li a {
+.footer-social ul li a,
+.footer-social ul li span {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-social ul li a:hover {
+.footer-social ul li a:hover,
+.footer-social ul li span:hover {
   color: orange;
   transition: color 0.3s;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
@@ -9,6 +9,10 @@ import Header from "../components/header";
 import games from "../components/GameData"; // Import game data
 
 function SearchResult() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { query } = useParams();
 
   // Filter games based on the search query for title or category

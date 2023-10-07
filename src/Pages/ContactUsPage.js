@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/header";
 import NewsLetterSignup from "../components/NewsletterSignup";
 import Footer from "../components/Footer";
@@ -11,6 +11,10 @@ import {
 import "./styles/ContactUs.css"; // Include your custom CSS file for additional styling
 
 function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Header />

@@ -1,0 +1,78 @@
+/* Header Styles */
+.terms-header {
+  background-color: orange; /* Header background color */
+  color: #fff; /* Header text color */
+  padding-bottom: 0.5rem; /* Header padding */
+  text-align: center; /* Center align text */
+  padding-top: 5rem;
+}
+
+.terms-title {
+  font-size: 2rem; /* Header title font size */
+}
+
+.terms-lead {
+  font-size: 16px; /* Header lead font size */
+  margin-top: 1rem; /* Add space below the title */
+}
+
+/* Main Content Styles */
+.terms-content {
+  margin: 2rem 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.terms-content h2 {
+  font-size: 1.3rem; /* Content title font size */
+}
+
+/* Call to Action Styles */
+.terms-cta {
+  color: #333; /* CTA text color */
+  margin: 3rem 0; /* CTA padding */
+  text-align: center; /* Center align text */
+}
+
+.terms-cta h2 {
+  font-size: 1.5rem; /* CTA title font size */
+}
+
+.terms-cta-link,
+.terms-cta a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.terms-cta-link:hover,
+.terms-cta a:hover {
+  color: orange;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .terms-title {
+    font-size: 24px;
+  }
+
+  .terms-lead {
+    font-size: 14px;
+  }
+
+  .terms-content h2 {
+    font-size: 20px;
+  }
+
+  .terms-content p {
+    font-size: 14px;
+  }
+
+  .terms-cta h2 {
+    font-size: 18px;
+  }
+
+  .terms-cta p {
+    font-size: 14px;
+  }
+}

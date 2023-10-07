@@ -1,5 +1,5 @@
 // News.js
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -14,6 +14,10 @@ import "../components/styles/LatestNews.css";
 import { Link } from "react-router-dom";
 
 function News() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const newsArticles = [
     {
       title: "New Game Release: Action Heroes Unleashed!",

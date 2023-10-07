@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInfoCircle,
   faEnvelope,
   faPhone,
   faMapMarker,
@@ -11,6 +10,7 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 import "./styles/Footer.css";
 
 function Footer() {
@@ -70,16 +70,19 @@ function Footer() {
             <h3>Explore</h3>
             <ul>
               <li>
-                <a href="#">Terms of Service</a>
+                <Link to="/terms">
+                  <span>Tearm of Services</span>
+                </Link>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <Link to="/privacy">
+                  <span>Privacy Policy</span>
+                </Link>
               </li>
               <li>
-                <a href="#">FAQs</a>
-              </li>
-              <li>
-                <a href="#">Support</a>
+                <Link to="/faq">
+                  <span>FAQ</span>
+                </Link>
               </li>
             </ul>
           </div>

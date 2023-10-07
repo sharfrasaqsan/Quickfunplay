@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/AboutUsPage.css";
 import Header from "../components/header";
 import NewsletterSignup from "../components/NewsletterSignup";
@@ -9,6 +9,10 @@ import Member2 from "./images/Member2.jpg";
 import Member3 from "./images/Member3.jpg";
 
 function AboutUsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Header />

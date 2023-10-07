@@ -1,0 +1,89 @@
+/* Header Styles */
+.faq-header {
+  background-color: orange; /* Header background color */
+  color: #fff; /* Header text color */
+  padding-bottom: 0.5rem; /* Header padding */
+  text-align: center; /* Center align text */
+  padding-top: 5rem;
+}
+
+.faq-title {
+  font-size: 2rem; /* Header title font size */
+}
+
+.faq-lead {
+  font-size: 16px; /* Header lead font size */
+  margin-top: 1rem; /* Add space below the title */
+}
+
+/* FAQ Item Styles */
+.faq-item {
+  margin-bottom: 1.5rem; /* Spacing between FAQ items */
+}
+
+.faq-question {
+  font-size: 1.3rem; /* FAQ question font size */
+  color: #333; /* FAQ question text color */
+  cursor: pointer; /* Add cursor pointer for interaction */
+}
+
+.faq-answer {
+  font-size: 16px; /* FAQ answer font size */
+  line-height: 1.5; /* Line height for better readability */
+  display: none; /* Hide answers by default */
+}
+
+/* Add styles for showing answers on click */
+.faq-item.open .faq-question {
+  color: orange; /* Change question color when open */
+}
+
+.faq-item.open .faq-answer {
+  display: block; /* Show answers when open */
+}
+
+/* Link Styles */
+.faq-cta-link,
+.faq-content a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.faq-cta-link:hover,
+.faq-content a:hover {
+  color: orange; /* Link hover color */
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.faq-margin {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  max-height: 15px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item.open {
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-lead {
+    font-size: 14px;
+  }
+
+  .faq-question {
+    font-size: 18px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
