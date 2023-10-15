@@ -8,7 +8,7 @@ import RacingImage from "./images/racing.jpg";
 const games = [
   {
     id: 1,
-    title: "Game 1",
+    title: "Tic Tac Toe",
     Category: "Category: Action",
     imageSrc: ActionImage,
   },

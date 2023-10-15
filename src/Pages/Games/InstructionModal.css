@@ -1,0 +1,87 @@
+/* InstructionsModal.css */
+.instructions-modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff !important;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  max-height: 100%;
+}
+
+.modal-content h2 {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+}
+
+.modal-content p {
+  padding: 0.25rem 0;
+  text-align: justify;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 15px;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.instructions-button {
+  margin-left: 1rem;
+}
+
+.open-instructions-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.open-instructions-button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 10% auto;
+    max-height: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    margin: 25% auto;
+    max-width: 320px;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content p,
+  .modal-content li {
+    font-size: 14px;
+  }
+
+  .close-button {
+    font-size: 24px;
+  }
+}

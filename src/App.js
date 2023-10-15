@@ -13,6 +13,7 @@ import FAQ from "./Pages/FAQ";
 import "./App.css";
 import News1 from "./Pages/NewsPages/News1";
 import News2 from "./Pages/NewsPages/News2";
+import TicTacToe from "./Pages/Games/TicTacToe/TicTacToe";
 
 function App() {
   function ScrollToTop() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/news1" element={<News1 />} />
           <Route path="/news2" element={<News2 />} />
+          <Route path="/game/1" element={<TicTacToe />} />
           {/* Add more routes for other pages */}
         </Routes>
       </div>

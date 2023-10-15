@@ -1,0 +1,91 @@
+/* Updated Custom Tic-Tac-Toe Styles */
+.tictactoe-header {
+  background-color: orange;
+  color: #fff;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #333;
+}
+
+.tictactoe-title {
+  font-size: 2rem;
+}
+
+.custom-square {
+  background: #fff;
+  border: 2px solid #333;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 6rem;
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #e76f51;
+}
+
+.custom-square:hover {
+  background: #f0f0f0;
+}
+
+.custom-board {
+  display: inline-block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: calc(var(--bs-gutter-x) * 0.5);
+  border-radius: 10px;
+}
+
+.custom-board > .row > .col-4 {
+  margin-bottom: 15px;
+}
+
+.custom-status {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container-tictactoe {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container-tictactoe-btn {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.custom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.anim {
+  animation: cracker 0.5s infinite;
+}
+
+@keyframes cracker {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-square {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+  }
+}
