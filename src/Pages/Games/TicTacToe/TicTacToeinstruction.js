@@ -11,7 +11,7 @@ function TicTacToeinstruction() {
   return (
     <div className="instructions-button">
       <button className="open-instructions-button" onClick={toggleModal}>
-        Open Instructions
+        Instructions
       </button>
 
       {isOpen && (

@@ -137,17 +137,17 @@ function TicTacToe() {
             <div className="col-4">{renderSquare(8)}</div>
           </div>
         </div>
-      </div>
 
-      <div className="container text-center container-tictactoe-btn">
-        <button className="btn btn-primary m-2" onClick={handleRestart}>
-          Restart
-        </button>
-        {winner || board.every((square) => square) ? (
-          <button className="btn btn-danger m-2" onClick={handleStartOver}>
-            Start Over
+        <div className="container text-center container-tictactoe-btn">
+          <button className="btn btn-primary m-2" onClick={handleRestart}>
+            Restart
           </button>
-        ) : null}
+          {winner || board.every((square) => square) ? (
+            <button className="btn btn-danger m-2" onClick={handleStartOver}>
+              Start Over
+            </button>
+          ) : null}
+        </div>
       </div>
 
       <NewsLetter />
